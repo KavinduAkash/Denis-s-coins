@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="assests/css/my.css">
+</head>
+<body>
+<!--canvas-->
+<canvas id="bbdemo" width=1000 height=550>
+
+</canvas>
+<!--canvas-->
+
+<!--Time board-->
+<div id="timeboard">
+    <img src="assests/img/kisspng-alarm-clock-icon-blue-alarm-clock-5a9218818bbdd2.1812414215195239695724.png" alt="" width="35px">
+    <h3 id="txttime">Time</h3>
+</div>
+<!--Time board-->
+
+<!--score board-->
+<div id="scoreboard">
+    <img src="assests/img/coin/c2.png" alt="" width="25px">
+    <h3 id="txtscore">Score</h3>
+</div>
+<!--score board-->
+
+<!--Next Box-->
+
+<div class="gamebox" id="gamenextbox">
+    <div class="ingamebox">
+        <img src="assests/img/winboy.png" alt="" width="60px">
+        <h1 class="style1">Success!</h1>
+        <div id="gamenextscorepoint" style="font-size:25px; font-weight:bold; margin-bottom:10px; margin-top:10px;" >Total Score <span id="showscor"></span></div>
+
+            <input type="submit" class="boxbtnstyle btntryagain" value="Try Again"/>
+            <input type="submit" id="btnnext" class="boxbtnstyle" value="Next"/>
+
+    </div>
+</div>
+
+<!--Next Box-->
+
+<!--Game Over Box-->
+
+<div class="gamebox" id="gameoverbox">
+    <div class="ingamebox">
+        <img src="assests/img/lostboy.png" alt="" width="60px">
+        <h1 class="style1">Game Over</h1>
+        <div id="gameoverscorepoint" style="font-size:25px; font-weight:bold; margin-bottom:10px; margin-top:10px;" >Total Score</div>
+        <div style="margin-top:10px; font-size:13px;">Retry Please</div>
+
+            <input type="submit" class="boxbtnstyle btntryagain" value="Try Again"/>
+    </div>
+</div>
+
+<!--Game Over Box-->
+
+
+    <!--<audio id="audio1">-->
+        <!--<source src="assests/audio/coin.mp3" type="audio/mp3" >-->
+    <!--</audio>-->
+<audio src="assests/audio/coin.mp3" id="audio1"></audio>
+
+<script src="assests/js/jquary/jquery-3.4.1.min.js"></script>
+<script src="assests/js/boxbox/Box2dWeb-2.1.a.3.min.js"></script>
+<script src="assests/js/boxbox/boxbox.min.js"></script>
+<script src="assests/js/my.js"></script>
+
+</body>
+</html>
